@@ -73,4 +73,5 @@ python axis_decompose.py --model ./model.gguf \
 - [`embedding_cliffs.ipynb`](embedding_cliffs.ipynb) — the same experiments as a runnable notebook, one cell per use case.
 - [`METHODOLOGY.md`](METHODOLOGY.md) — workflow for isolating and characterizing a perturbation axis.
 - [`CLAUDE.md`](CLAUDE.md) — repo guidance for Claude Code.
+- `figures/` — SVG charts embedded in `embedding-cliffs.md`.
 - `models/` — not tracked in git; put your own GGUF files here.

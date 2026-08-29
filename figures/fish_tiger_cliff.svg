@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+<rect width="900" height="360" fill="#f8f7f3"/>
+<text x="450.0" y="30" font-size="16" fill="#1c1d22" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-style="normal">Fish → Tiger axis: observed state at each tested scale</text>
+<text x="450.0" y="50" font-size="12" fill="#5b5d68" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal" font-style="italic">mean(lion, bear, tiger) − mean(bunny, gazelle, deer), target word "Fish", 8B model</text>
+<line x1="195" y1="260" x2="860" y2="260" stroke="#c7c2b5" stroke-dasharray="2,4"/>
+<text x="181" y="264" font-size="12" fill="#a13a3a" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="normal" font-style="normal">garbled / “deer”-ish</text>
+<line x1="195" y1="190" x2="860" y2="190" stroke="#c7c2b5" stroke-dasharray="2,4"/>
+<text x="181" y="194" font-size="12" fill="#2f6f6b" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="normal" font-style="normal">“fish”</text>
+<line x1="195" y1="130" x2="860" y2="130" stroke="#c7c2b5" stroke-dasharray="2,4"/>
+<text x="181" y="134" font-size="12" fill="#a13a3a" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="normal" font-style="normal">garbled zone</text>
+<line x1="195" y1="60" x2="860" y2="60" stroke="#c7c2b5" stroke-dasharray="2,4"/>
+<text x="181" y="64" font-size="12" fill="#a8721f" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="normal" font-style="normal">“tiger”</text>
+<path d="M 225.2 260 L 376.4 190 L 527.5 190 L 678.6 190 L 729.0 190 L 754.2 130 L 779.4 130 L 804.6 60 L 829.8 60" fill="none" stroke="#1c1d22" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="225.2" cy="260" r="4" fill="#1c1d22"/>
+<text x="225.22727272727272" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">-3</text>
+<circle cx="376.4" cy="190" r="4" fill="#1c1d22"/>
+<text x="376.3636363636364" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">-1.5</text>
+<circle cx="527.5" cy="190" r="4" fill="#1c1d22"/>
+<text x="527.5" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">0</text>
+<circle cx="678.6" cy="190" r="4" fill="#1c1d22"/>
+<text x="678.6363636363636" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">1.5</text>
+<circle cx="729.0" cy="190" r="4" fill="#1c1d22"/>
+<text x="729.0151515151515" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">2</text>
+<circle cx="754.2" cy="130" r="4" fill="#1c1d22"/>
+<text x="754.2045454545455" y="326" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">2.25</text>
+<circle cx="779.4" cy="130" r="4" fill="#1c1d22"/>
+<text x="779.3939393939394" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">2.5</text>
+<circle cx="804.6" cy="60" r="4" fill="#1c1d22"/>
+<text x="804.5833333333334" y="326" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">2.75</text>
+<circle cx="829.8" cy="60" r="4" fill="#1c1d22"/>
+<text x="829.7727272727273" y="310" font-size="10.5" fill="#5b5d68" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-weight="normal" font-style="normal">3</text>
+<line x1="195" y1="290" x2="860" y2="290" stroke="#c7c2b5"/>
+<text x="527.5" y="350" font-size="12" fill="#5b5d68" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal" font-style="italic">scale</text>
+</svg>

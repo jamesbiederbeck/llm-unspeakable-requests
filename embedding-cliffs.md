@@ -71,6 +71,8 @@ Before trusting any direction math, confirm the geometry behaves the way it shou
 | cat ↔ car | 0.1985 |
 | cat ↔ tiger | 0.1453 |
 
+![Cosine similarity between cat and dog, car, tiger](figures/cosine_similarity.svg)
+
 Sensible ordering — closest co-occurring pair (cat/dog) scores highest. One gotcha worth flagging: BPE tokenizes `"tiger"` and `" tiger"` (leading space) as entirely different tokens; only the space-prefixed, word-initial form gives a clean single-token comparison.
 
 ## 6. "Fix": dialing hackiness with one word
@@ -119,17 +121,9 @@ Direction: mean(*lion, bear, tiger*) − mean(*bunny, gazelle, deer*), on the si
 | 2.75 | clean lock onto **"Tiger"** |
 | 3 | clean "Tiger," fully formed definition |
 
-Sketch of the shape (not measured data): coherence stays high and roughly flat across most of the tested range, drops sharply in a narrow transitional band (~2.25–2.5), then recovers to a *different* stable identity. Two basins, one crossing — not a gradual slope.
+The shape: coherence stays flat across most of the tested range, drops sharply in a narrow transitional band (~2.25–2.5), then recovers to a *different* stable identity. Two basins, one crossing — not a gradual slope.
 
-```
- coherent  "deer"-ish            "fish"                      "tiger"
-    ▲         ●───────●───●            ●──●──●         ●──────────●
-    │                       ╲         ╱        ╲       ╱
-    │                        ╲       ╱          ╲     ╱
-    │                         ╲     ╱     ╱garbled╲   ╱
-    └────────────────────────────────────zone──────────────────────▶ scale
-         −3          −1.5       0    2.0  2.25  2.5   2.75    3
-```
+![Fish to Tiger axis: observed state at each tested scale](figures/fish_tiger_cliff.svg)
 
 The same axis on a fully unrelated single-token word, **Boat**, showed an even sharper version of this — no transitional garbling at all, just a step function:
 
@@ -142,11 +136,15 @@ The same axis on a fully unrelated single-token word, **Boat**, showed an even s
 
 One-tenth of a scale unit separates a rock-solid "boat" definition from a total, coherent subject change to boy/girl — no degenerate or garbled intermediate state at all here, unlike the fish/tiger transition above.
 
+![Boat axis: identity flips in one step, no transition zone](figures/boat_threshold.svg)
+
 > **Not always symmetric, not always resolving.** A big/small axis — mean(*tower, whale*) − mean(*mouse, flea, atom*) — on "Fish":
 >
 > −5/−4: *"...I believe you meant 'flea' or 'mouse' as in a small rodent, however, the word 'fish' is"* — resolves cleanly toward the small group.
 >
 > +4/+5: *"The word 'wander' is not the word you asked about... the word you asked about is 'Waver' is also not in"* / *"...the word you asked about is 'wahler' no, I"* — the positive (big) direction **never resolved**, even pushed to scale 5, well past where every other axis tested had already locked in. Stuck permanently in a garbled near-miss basin, all phonetically whale-adjacent ("wander," "Waver," "wahler") but never landing on "tower" or "whale" outright. Likely because *tower* and *whale* are semantically distant from each other, so their mean sits between concepts rather than at one.
+
+![Big/small axis: one side resolves, one never does](figures/big_small_asymmetry.svg)
 
 ### A second target word: "Dancer" (2 tokens, not 1)
 
